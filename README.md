@@ -54,5 +54,7 @@ npx expo start -c
 
 5. Resources
    • React Native Official Documentation: https://reactnative.dev/docs/environment-setup
+
    • Node.js Official Website: https://nodejs.org
+
    • Install Expo Router: [Install Expo Router - Expo Documentation](https://docs.expo.dev/router/installation/#manual-installation)
