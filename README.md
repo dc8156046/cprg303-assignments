@@ -42,9 +42,9 @@ install the following dependencies for web:
 npx expo install react-native-web react-dom
 ```
 
-```bash
 Running the Project:
 
+```bash
 npx expo start -c
 ```
 
