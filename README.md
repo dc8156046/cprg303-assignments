@@ -52,9 +52,10 @@ Running the Project:
 npx expo start -c
 ```
 
-5. Resources
-   • React Native Official Documentation: https://reactnative.dev/docs/environment-setup
+## 5. Resources
 
-   • Node.js Official Website: https://nodejs.org
+• React Native Official Documentation: https://reactnative.dev/docs/environment-setup
 
-   • Install Expo Router: [Install Expo Router - Expo Documentation](https://docs.expo.dev/router/installation/#manual-installation)
+• Node.js Official Website: https://nodejs.org
+
+• Install Expo Router: [Install Expo Router - Expo Documentation](https://docs.expo.dev/router/installation/#manual-installation)
