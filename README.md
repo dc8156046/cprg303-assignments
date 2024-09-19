@@ -10,9 +10,13 @@ RAM: 16GB
 ## Getting Started
 
 1. Installation Instructions
+
    1.1 Install Node.js
+
    • Download: Visit [Node.js](https://nodejs.org/) and download the latest stable version (LTS).
+
    • Install: Follow the installer’s steps.
+
    • Verify Installation:
 
    ```bash
