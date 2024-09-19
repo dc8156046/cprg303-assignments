@@ -3,8 +3,11 @@
 React Native Environment Setup: A Step-by-Step Guide
 
 System Requirements
+
 Operating System: Windows 11 Home
+
 CPU: AMD Ryzen 5 PRO 4650U
+
 RAM: 16GB
 
 ## Getting Started
@@ -52,10 +55,14 @@ Running the Project:
 npx expo start -c
 ```
 
-## 5. Resources
+## Resources
 
 • React Native Official Documentation: https://reactnative.dev/docs/environment-setup
 
 • Node.js Official Website: https://nodejs.org
 
 • Install Expo Router: [Install Expo Router - Expo Documentation](https://docs.expo.dev/router/installation/#manual-installation)
+
+## License
+
+This project is open source and available under the [MIT License](LICENSE).
