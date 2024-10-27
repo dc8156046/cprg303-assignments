@@ -1,24 +1,19 @@
 import React from "react";
 import { StyleSheet, Pressable, View, Text, ScrollView } from "react-native";
 
-const ToDoList = () => {
+const ToDoList = ({ tasks }) => {
   return (
-    <ScrollView>
-      <Pressable>
-        <View style={[styles.task, styles.completed]}>
-          <Text style={styles.taskText}>Do laundry</Text>
-        </View>
-      </Pressable>
-      <Pressable>
-        <View style={[styles.task]}>
-          <Text style={styles.taskText}>Go to gym</Text>
-        </View>
-      </Pressable>
-      <Pressable>
-        <View style={[styles.task, styles.completed]}>
-          <Text style={styles.taskText}>Walk dog</Text>
-        </View>
-      </Pressable>
+    <ScrollView style={styles.scrollView}>
+      {(tasks || []).map((task, index) => (
+        <Pressable
+          key={index}
+          style={({ pressed }) => [styles.pressable, pressed && styles.pressed]}
+        >
+          <View style={styles.task}>
+            <Text style={styles.taskText}>{task}</Text>
+          </View>
+        </Pressable>
+      ))}
     </ScrollView>
   );
 };
@@ -26,15 +21,31 @@ const ToDoList = () => {
 export default ToDoList;
 
 const styles = StyleSheet.create({
-  task: {
-    padding: 10,
-    borderBottomWidth: 1,
-    borderColor: "#ccc",
+  scrollView: {
+    width: "100%",
   },
-  completed: {
-    backgroundColor: "#e0e0e0",
+  pressable: {
+    marginVertical: 5,
+    borderRadius: 5,
+  },
+  pressed: {
+    backgroundColor: "#f0f0f0",
+  },
+  task: {
+    padding: 15,
+    borderBottomWidth: 0.5,
+    borderColor: "#ddd",
+    backgroundColor: "#fff",
+    borderRadius: 5,
+    shadowColor: "#000",
+    shadowOffset: { width: 0, height: 1 },
+    shadowOpacity: 0.1,
+    shadowRadius: 2,
+    elevation: 2,
   },
   taskText: {
-    fontSize: 16,
+    fontSize: 18,
+    fontWeight: "500",
+    color: "#333",
   },
 });
