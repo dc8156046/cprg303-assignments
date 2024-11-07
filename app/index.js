@@ -6,12 +6,23 @@ import { useState } from "react";
 export default function Page() {
   const [tasks, setTasks] = useState(["Do laundry", "Go to gym", "Walk dog"]);
 
+  const addTask = (taskText) => {
+    if (!taskText) {
+      return;
+    }
+    if (tasks.filter((task) => task === taskText).length > 0) {
+      alert("Task already exists");
+    } else {
+      setTasks([...tasks, taskText]);
+    }
+  };
+
   return (
     <View style={styles.container}>
       <View style={styles.main}>
         <Text style={styles.subtitle}>To Do List</Text>
         <ToDoList tasks={tasks} />
-        <ToDoForm />
+        <ToDoForm addTask={addTask} />
       </View>
     </View>
   );
